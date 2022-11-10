@@ -1,8 +1,11 @@
 package icici.loans.eduloans;
 
-import icici.loans.carloans.A;
+import javax.net.ssl.ExtendedSSLSession;
 
-public class C extends A
+import icici.loans.carloans.A;
+import icici.loans.carloans.B;
+
+public class C extends B
 {
 	public void m3()
 	{
@@ -11,9 +14,9 @@ public class C extends A
 
 	public static void main(String[] args) 
 	{
-		A a = new A();
-		a.m1();
-		System.out.println(a.x);
+		B b = new B();
+		b.m2();
+		b.m1();
 		
 		C c = new C();
 		c.m3();
