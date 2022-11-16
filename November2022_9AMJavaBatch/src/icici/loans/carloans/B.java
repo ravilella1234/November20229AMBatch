@@ -2,6 +2,11 @@ package icici.loans.carloans;
 
 public class B extends A // ISA Relationship
 {
+	public void m1()
+	{
+		System.out.println("iam overriden m1 from B");
+	}
+	
 	public void m2()
 	{
 		System.out.println("iam m2 from B");
