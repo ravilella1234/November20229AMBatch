@@ -4,16 +4,9 @@ import java.util.Scanner;
 
 public class SingleDimenssionArray 
 {
-
-	public static void main(String[] args) 
+	
+	public int m1()
 	{
-		/*int[] x = {10,20,30,40};
-		
-		for(int i=0;i<x.length;i++)
-		{
-			System.out.println("x["+i+"]="+x[i]);
-		}*/
-		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the array Size : ");
 		int asize = sc.nextInt();
@@ -29,9 +22,14 @@ public class SingleDimenssionArray
 			sum = sum + a[i];
 		}
 		System.out.println("Sum of array is : " +  sum);
-		
-		
-		int[] x = new int[] {10,20,30,40};
+		return sum;
+	}
+
+	public static void main(String[] args) 
+	{		
+		SingleDimenssionArray obj = new SingleDimenssionArray();
+		int count = obj.m1();
+		System.out.println("Count of Array is : " + count);
 	}
 
 }
